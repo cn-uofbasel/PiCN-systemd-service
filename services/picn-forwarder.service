@@ -1,0 +1,8 @@
+[Unit]
+Description=PiCN Forwarder
+Documentation=https://github.com/cn-uofbasel/PiCN
+
+[Service]
+ExecStart=/path/to/PiCN/starter/picn-relay --logging error
+Restart=always
+User=picnuser
