@@ -14,4 +14,21 @@ This repository provides instructions and configuration files to run PiCN execut
 
 ## Usage
 
-tbd
+Available systemd services are:
+
+* `picn-forwarder`
+* todo: nfn relay and others
+
+The follow examples explain how to manage a PiCN forwarder. All other services are handled equally.
+
+### Starting and Stopping
+
+todo
+
+### Enabling and Disabling
+
+todo
+
+### Status monitoring
+
+todo
