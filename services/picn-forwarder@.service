@@ -1,8 +1,8 @@
 [Unit]
-Description=PiCN Forwarder
-Documentation=https://github.com/cn-uofbasel/PiCN
+Description=PiCN Forwarder (Config: %I)
+Documentation=https://github.com/cn-uofbasel/PiCN-systemd-service
 
 [Service]
-ExecStart=/path/to/PiCN/starter/picn-relay --logging error
+ExecStart=/bin/bash -c "/path/to/PiCN/starter/picn-relay --config %I"
 Restart=always
-User=picnuser
+User=picnunser
