@@ -50,11 +50,22 @@ A service can be enabled to start when the system boots:
 you@machine:~$ systemctl enable picn-forwarder@none
 ```
 
-Note that this does not start the service immediately. The service can be started as described above (if not yet running) or will start on reboot. A service can be disabled as following:
+Note that this does not start the service immediately. The service can be started as described in the previous section (if not yet running) or will start on reboot. A service can be disabled as following:
 ```console
 you@machine:~$ systemctl disable picn-forwarder@none
 ```
 
-### Status monitoring
+### Status Monitoring
 
-todo
+The following command shows status information of a service and logging output of PiCN:
+```console
+you@machine:~$ systemctl status picn-forwarder@none
+...
+```
+
+All PiCN-related services are listed as following:
+```console
+you@machine:~$ systemctl list-units --type service | grep 'picn'
+...
+```
+
