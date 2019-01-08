@@ -29,6 +29,20 @@ you@machine:~$ systemctl start picn-forwarder@none
 you@machine:~$ systemctl stop picn-forwarder@none
 ```
 
+To change default arguments, the path of a configuration file can be passed instead of `none`:
+```console
+you@machine:~$ systemctl start picn-forwarder@-path-to-config-file
+you@machine:~$ systemctl stop picn-forwarder@-path-to-config-file
+```
+
+The configuration file path must be escaped. The tool `systemd-escape` helps to generate escaped paths:
+```console
+you@machine:~$ systemd-escape '/path/to/config/file'
+-path-to-config-file
+```
+
+My using multiple configuration files, more than one instance can be started as systemd services.
+
 ### Enabling and Disabling
 
 todo
