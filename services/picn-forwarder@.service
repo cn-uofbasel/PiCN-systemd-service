@@ -5,4 +5,4 @@ Documentation=https://github.com/cn-uofbasel/PiCN-systemd-service
 [Service]
 ExecStart=/bin/bash -c "/path/to/PiCN/starter/picn-relay --config %I"
 Restart=always
-User=picnunser
+User=picn

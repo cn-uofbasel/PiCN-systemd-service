@@ -10,7 +10,7 @@ This repository provides instructions and configuration files to run PiCN execut
 
 * Adjust the path in the downloaded files to the location of PiCN
 
-* Adjust the user in the downloaded files (optional, recommended) 
+* Add a new user `picn` which runs the PiCN instances: `useradd --system picn`. Alternatively, you can set `User` in the downloaded file to an existing user (not recommended).
 
 ## Usage
 
@@ -23,7 +23,11 @@ The follow examples explain how to manage a PiCN forwarder. All other services a
 
 ### Starting and Stopping
 
-todo
+A PiCN forwarder (default configuration) is started and stopped with following commands:
+```console
+you@machine:~$ systemctl start picn-forwarder@none
+you@machine:~$ systemctl stop picn-forwarder@none
+```
 
 ### Enabling and Disabling
 
