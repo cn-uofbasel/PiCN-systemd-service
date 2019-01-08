@@ -17,7 +17,7 @@ This repository provides instructions and configuration files to run PiCN execut
 Available systemd services are:
 
 * `picn-forwarder`
-* `picn-nfn` (to be done)
+* `picn-nfn`
 
 The follow examples explain how to manage a PiCN forwarder. All other services are handled equally.
 
@@ -57,7 +57,7 @@ you@machine:~$ systemctl disable picn-forwarder@none
 
 ### Status Monitoring
 
-The following command shows status information of a service and logging output of PiCN:
+The following command shows status information of a service and logging output that PiCN instance:
 ```console
 you@machine:~$ systemctl status picn-forwarder@none
 ...
