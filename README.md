@@ -17,7 +17,7 @@ This repository provides instructions and configuration files to run PiCN execut
 Available systemd services are:
 
 * `picn-forwarder`
-* todo: nfn relay and others
+* `picn-nfn` (to be done)
 
 The follow examples explain how to manage a PiCN forwarder. All other services are handled equally.
 
@@ -41,11 +41,19 @@ you@machine:~$ systemd-escape '/path/to/config/file'
 -path-to-config-file
 ```
 
-My using multiple configuration files, more than one instance can be started as systemd services.
+By using multiple configuration files, more than one instance of a PiCN executable can be started as systemd services.
 
 ### Enabling and Disabling
 
-todo
+A service can be enabled to start when the system boots:
+```console
+you@machine:~$ systemctl enable picn-forwarder@none
+```
+
+Note that this does not start the service immediately. The service can be started as described above (if not yet running) or will start on reboot. A service can be disabled as following:
+```console
+you@machine:~$ systemctl disable picn-forwarder@none
+```
 
 ### Status monitoring
 
