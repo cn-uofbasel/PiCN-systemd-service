@@ -1,6 +1,6 @@
 # PiCN-systemd-service
 
-This repository provides instructions and configuration files to run PiCN executables as systemd services.
+This repository provides instructions and configuration files to run [PiCN](https://github.com/cn-uofbasel/PiCN) executables as systemd services.
 
 ## Installation
 
